@@ -1,4 +1,6 @@
 package application;
 
-public class Program {
+public class Menu {
+
+
 }
