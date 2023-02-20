@@ -53,9 +53,6 @@ public class Cliente{
 		System.out.println("Endereço: " + endereco);
 		System.out.println("Email: " + email);
 	}
-	
-	
-	
 } 
 		
 	
