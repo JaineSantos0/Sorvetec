@@ -29,11 +29,10 @@ public class Menu {
 		List<Produto> sorvetesPersonalizados = lerArquivo.sorvetePersonalizado();
 //		List<Produto> cliente = lerArquivo.cliente();
 
-		System.out.println("Selecione qual destas categorias gostaria de pedir: ");
-		System.out.println("1- Pote de Sorvete de 2lts");
-		System.out.println("2- Copo com bolas de sorvete");
-		System.out.println("3- Picolé");
-		System.out.println("4- Adicionais");
+		System.out.println("Qual destas categorias gostaria de pedir hoje: \n" 
+		+ "1- Pote de Sorvete de 2lts\n" + "2- Copo com bolas de sorvete\n" + "3- Picolé\n"+ "4- Adicionais\n"
+				+"Digite o número da categoria:\n ");
+
 
 		int categoria = sc.nextInt();
 
