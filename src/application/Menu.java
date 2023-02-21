@@ -1,17 +1,58 @@
 package application;
 
-import entities.Produto;
-
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Cliente;
+import entities.Produto;
+import entities.SorvetePersonalizado;
+import entities.util.LeituraArquivo;
 
 public class Menu {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        Locale.setDefault(Locale.US);
+		Locale.setDefault(Locale.US);
 
-        Produto prod1 = new Produto("Sorvete","Pote 2l","Morango","sem cobertura","sem adicional",17.00);
+		Scanner sc = new Scanner(System.in);
 
-        System.out.println(prod1);
-    }
+		LeituraArquivo lerArquivo = new LeituraArquivo();
+
+		List<Produto> sorvetesMassa = lerArquivo.sorveteMassa();
+		List<Produto> picoles = lerArquivo.picole();
+		List<Produto> adicionais = lerArquivo.adicionais();
+		List<Produto> sorvetesPersonalizados = lerArquivo.sorvetePersonalizado();
+//		List<Produto> cliente = lerArquivo.cliente();
+
+		System.out.println("Selecione qual destas categorias gostaria de pedir: ");
+		System.out.println("1- Pote de Sorvete de 2lts");
+		System.out.println("2- Copo com bolas de sorvete");
+		System.out.println("3- Picolé");
+		System.out.println("4- Adicionais");
+
+		int categoria = sc.nextInt();
+
+		switch (categoria) {
+
+		case 1:
+			sorvetesMassa.forEach(System.out::println);
+			break;
+		case 2:
+			sorvetesPersonalizados.forEach(System.out::println);
+
+			break;
+		case 3:
+			picoles.forEach(System.out::println);
+			break;
+		case 4:
+			adicionais.forEach(System.out::println);
+			break;
+		}
+
+	}
 }
