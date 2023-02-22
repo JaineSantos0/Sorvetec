@@ -67,10 +67,8 @@ public class Produto {
 	
 	@Override
 	public String toString() {
-		return "Produto [id=" + id + ", nome=" + nome + ", tipo=" + tipo + ", sabor=" + sabor + ", precoUnitario="
-				+ precoUnitario + "]";
+		return String.format( "🍧 %.2f ------------ ",precoUnitario) + " " + id + " " + nome + " " + sabor + " " ;
 	}
-	
 	
 
 }
