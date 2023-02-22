@@ -61,9 +61,12 @@ public class Cliente{
 		this.email = email;
 	}
 	
-	public void imprimirDadosCliente() {
-				System.out.println("Nome: " + nome);
-				System.out.println("Telefone: " + telefone);
+	public void imprimirDadosCliente(List<Cliente> clienteList, String telefone) {
+		for (Cliente cliente: clienteList) {
+			if (cliente.getTelefone().equalsIgnoreCase(telefone)) {
+				System.out.println(cliente.nome + " " + cliente.telefone);
 			}
+		}
+	}
 	
 }
