@@ -1,19 +1,33 @@
 package entities;
 
+import java.util.List;
 
 public class Cliente{ 
 	
+	private Float id;
 	private String nome;
 	private String telefone;
 	private String endereco;
 	private String email;
 	
-	public Cliente(String nome, String telefone, String endereco, String email) {
+	
+	public Cliente(Float id, String nome, String telefone, String endereco, String email) {
+		this.id = id;
 		this.nome = nome;
 		this.telefone = telefone;
 		this.endereco = endereco;
 		this.email = email;
 	}
+
+	public Float getId() {
+		return id;
+	}
+
+	public void setId(Float id) {
+		this.id = id;
+	}
+
+
 
 	public String getNome() {
 		return nome;
@@ -48,11 +62,8 @@ public class Cliente{
 	}
 	
 	public void imprimirDadosCliente() {
-		System.out.println("Nome: " + nome);
-		System.out.println("Telefone: " + telefone);
-		System.out.println("Endereço: " + endereco);
-		System.out.println("Email: " + email);
-	}
-} 
-		
+				System.out.println("Nome: " + nome);
+				System.out.println("Telefone: " + telefone);
+			}
 	
+}
