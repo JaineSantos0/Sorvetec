@@ -2,6 +2,7 @@ package entities;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Pedido {
 
@@ -53,34 +54,36 @@ public class Pedido {
 		this.valor = valor;
 	}
 
-	public Double calcularPedido(List<Pedido> pedidoList ){
+	public Double calcularPedido(List<Pedido> pedidoList){
 
 		double soma=0;
 
 		for (Pedido pedido:pedidoList){
-			soma += pedido.valor * pedido.quantidade ;
+			soma += pedido.getValor() * pedido.getQuantidade() ;
 		}
 		return soma;
 	}
 
-	public void confirmaPagamento(String formaPagamento){
-		System.out.println("CONFIRMAR PEDIDO: ");
-		System.out.println("ID: " + id);
-		System.out.println("FORMA DE PAGAMENTO: " + formaPagamento);
-		for (Pedido pedido:pedidoList){
-			System.out.println(pedido);
-		}
-		System.out.println("VALOR TOTAL A PAGAR : " + calcularPedido());
+	public void confirmaPagamento(List<Pedido> pedidoList){
+
+		Random geraId = new Random();
+		
+		System.out.println("Confirmar pedido");
+		System.out.println("Número do Pedido: " + geraId.nextInt());
+		
+		System.out.println("Total a pagar: " + calcularPedido(pedidoList));
+		
 
 	}
-	public Double TrocarDinheiro(double valorDinheiro){
-		return valorDinheiro - calcularPedido();
+	public Double trocarDinheiro(double valorCliente, double valorDinheiro){		
+		return valorDinheiro - valorCliente;
+	}
+
+	@Override
+	public String toString() {
+		return "Pedido [id=" + id + ", nomeItem=" + nomeItem + ", quantidade=" + quantidade + ", valor=" + valor + "]";
 	}
 
 	
-	
-	
-
-
 }
 
