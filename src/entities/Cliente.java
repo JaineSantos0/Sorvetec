@@ -69,6 +69,6 @@ public class Cliente{
             if (cliente.getTelefone().equalsIgnoreCase(telefone)) {
                 System.out.println(cliente.nome + " " + cliente.telefone);
             }
-		}
-	}
+         }
+     }
 }
