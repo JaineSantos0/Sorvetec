@@ -1,20 +1,14 @@
 package entities;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 public class Produto {
 
-	private Integer id;
+	private Long id;
 	private String nome;
 	private String tipo;
 	private String sabor;
 	private Double precoUnitario;
 
-	public Produto(Integer id, String nome, String tipo, String sabor, Double precoUnitario) {
+	public Produto(Long id, String nome, String tipo, String sabor, Double precoUnitario) {
 		this.id = id;
 		this.nome = nome;
 		this.tipo = tipo;
@@ -23,11 +17,11 @@ public class Produto {
 	}
 
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

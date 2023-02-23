@@ -23,7 +23,7 @@ public class LeituraArquivo {
 			while (line != null) {
 				String[] fields = line.split(",");
 
-				sorveteMassaList.add(new Produto(Integer.parseInt(fields[0]), fields[1], fields[2], fields[3],
+				sorveteMassaList.add(new Produto(Long.parseLong(fields[0]), fields[1], fields[2], fields[3],
 						Double.parseDouble(fields[4])));
 				line = br.readLine();
 			}
@@ -45,7 +45,7 @@ public class LeituraArquivo {
 			while (line != null) {
 				String[] fields = line.split(",");
 
-				picoleList.add(new Produto(Integer.parseInt(fields[0]), fields[1], fields[2], fields[3],
+				picoleList.add(new Produto(Long.parseLong(fields[0]), fields[1], fields[2], fields[3],
 						Double.parseDouble(fields[4])));
 				line = br.readLine();
 			}
@@ -68,7 +68,7 @@ public class LeituraArquivo {
 			while (line != null) {
 				String[] fields = line.split(",");
 
-				adicionaisList.add(new Produto(Integer.parseInt(fields[0]), fields[1], fields[2], fields[3],
+				adicionaisList.add(new Produto(Long.parseLong(fields[0]), fields[1], fields[2], fields[3],
 						Double.parseDouble(fields[4])));
 				line = br.readLine();
 			}
@@ -90,7 +90,7 @@ public class LeituraArquivo {
 			while (line != null) {
 				String[] fields = line.split(",");
 
-				sorvetePersonalizadoList.add(new SorvetePersonalizado(Integer.parseInt(fields[0]), fields[1], fields[2],
+				sorvetePersonalizadoList.add(new SorvetePersonalizado(Long.parseLong(fields[0]), fields[1], fields[2],
 						fields[3], Double.parseDouble(fields[4]), fields[5], fields[6], fields[7]));
 				line = br.readLine();
 			}
@@ -101,25 +101,25 @@ public class LeituraArquivo {
 
 	}
 
-//public List<Produto> cliente() {
-//	
-//	String pathCliente = "c:/temp/cliente.csv";
-//	List<Produto> Cliente = new ArrayList<>();
-//
-//	try (BufferedReader br = new BufferedReader(new FileReader(pathCliente))) {
-//
-//		String line = br.readLine();
-//		while (line != null) {
-//			String[] fields = line.split(",");
-//
-//			Cliente.add(new Cliente(Integer.parseInt(fields[0]), fields[1], fields[2], fields[3],fields[4])
-//			line = br.readLine();
-//		}
-//	} catch (IOException e) {
-//		System.out.println(e.getMessage());
-//	}
-//	return cliente;
-//	
-//}
+	public List<Cliente> cliente() {
+	
+	String pathCliente = "c:/temp/cliente.csv";
+	List<Cliente> cliente = new ArrayList<>();
+
+			try (BufferedReader br = new BufferedReader(new FileReader(pathCliente))) {
+
+		String line = br.readLine();
+		while (line != null) {
+			String[] fields = line.split(",");
+
+			cliente.add(new Cliente(Long.parseLong(fields[0]), fields[1], fields[2], fields[3],fields[4]));
+			line = br.readLine();
+		}
+	} catch (IOException e) {
+		System.out.println(e.getMessage());
+	}
+	return cliente;
+	
+}
 
 }
