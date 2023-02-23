@@ -6,7 +6,7 @@ public class SorvetePersonalizado extends Produto {
 	private String sabor2;
 	private String sabor3;
 
-	public SorvetePersonalizado(Integer id, String nome, String tipo, String sabor, Double precoUnitario, String sabor1,
+	public SorvetePersonalizado(Long id, String nome, String tipo, String sabor, Double precoUnitario, String sabor1,
 			String sabor2, String sabor3) {
 		super(id, nome, tipo, sabor, precoUnitario);
 		this.sabor1 = sabor1;

@@ -4,14 +4,17 @@ import java.util.List;
 
 public class Cliente{ 
 	
-	private Float id;
+	private Long id;
 	private String nome;
 	private String telefone;
 	private String endereco;
 	private String email;
 	
+	public Cliente() {
+		
+	}
 	
-	public Cliente(Float id, String nome, String telefone, String endereco, String email) {
+	public Cliente(Long id, String nome, String telefone, String endereco, String email) {
 		this.id = id;
 		this.nome = nome;
 		this.telefone = telefone;
@@ -19,11 +22,11 @@ public class Cliente{
 		this.email = email;
 	}
 
-	public Float getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Float id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -62,11 +65,10 @@ public class Cliente{
 	}
 	
 	public void imprimirDadosCliente(List<Cliente> clienteList, String telefone) {
-		for (Cliente cliente: clienteList) {
-			if (cliente.getTelefone().equalsIgnoreCase(telefone)) {
-				System.out.println(cliente.nome + " " + cliente.telefone);
-			}
-		}
-	}
-	
+        for (Cliente cliente: clienteList) {
+            if (cliente.getTelefone().equalsIgnoreCase(telefone)) {
+                System.out.println(cliente.nome + " " + cliente.telefone);
+            }
+         }
+     }
 }
