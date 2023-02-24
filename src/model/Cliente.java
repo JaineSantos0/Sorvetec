@@ -1,8 +1,8 @@
-package entities;
+package model;
 
 import java.util.List;
 
-public class Cliente{ 
+public class Cliente{
 	
 	private Long id;
 	private String nome;
@@ -63,12 +63,17 @@ public class Cliente{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	public void imprimirDadosCliente(List<Cliente> clienteList, String telefone) {
-        for (Cliente cliente: clienteList) {
-            if (cliente.getTelefone().equalsIgnoreCase(telefone)) {
-                System.out.println(cliente.nome + " " + cliente.telefone);
-            }
-         }
-     }
+
+	public void imprimirPessoaFisica(List<PessoaFisica> pessoaFisicaList, String cpf) {
+
+	}
+	public void imprimirPessoaJuridica(List<PessoaJuridica> pessoaJuridicaList, String cpf) {
+
+	}
+
+	public void validarDadoPessoaFisica(List<PessoaFisica> clienteList, String telefone) {
+	}
+
+	public void validarDadoPessoaJuridica(List<PessoaJuridica> clienteList, String telefone) {
+	}
 }

@@ -1,4 +1,4 @@
-package entities.util;
+package model.util;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,9 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import entities.Cliente;
-import entities.Produto;
-import entities.SorvetePersonalizado;
+import model.*;
 
 public class LeituraArquivo {
 
@@ -90,8 +88,8 @@ public class LeituraArquivo {
 			while (line != null) {
 				String[] fields = line.split(",");
 
-				sorvetePersonalizadoList.add(new SorvetePersonalizado(Long.parseLong(fields[0]), fields[1], fields[2],
-						fields[3], Double.parseDouble(fields[4]), fields[5], fields[6], fields[7]));
+				sorvetePersonalizadoList.add(new Produto(Long.parseLong(fields[0]), fields[1], fields[2],
+						fields[3], Double.parseDouble(fields[4])));
 				line = br.readLine();
 			}
 		} catch (IOException e) {
@@ -101,25 +99,43 @@ public class LeituraArquivo {
 
 	}
 
-	public List<Cliente> cliente() {
-	
-	String pathCliente = "c:/temp/cliente.csv";
-	List<Cliente> cliente = new ArrayList<>();
+	public List<PessoaFisica> pessoasFisicas() {
 
-			try (BufferedReader br = new BufferedReader(new FileReader(pathCliente))) {
+		String pathPessoaFisica = "c:/temp/pessoafisica.csv";
+		List<PessoaFisica> pessoasFisicas = new ArrayList<>();
 
-		String line = br.readLine();
-		while (line != null) {
-			String[] fields = line.split(",");
+		try (BufferedReader br = new BufferedReader(new FileReader(pathPessoaFisica))) {
 
-			cliente.add(new Cliente(Long.parseLong(fields[0]), fields[1], fields[2], fields[3],fields[4]));
-			line = br.readLine();
+			String line = br.readLine();
+			while (line != null) {
+				String[] fields = line.split(",");
+
+				pessoasFisicas.add(new PessoaFisica(Long.parseLong(fields[0]), fields[1], fields[2], fields[3], fields[4], fields[5]));
+				line = br.readLine();
+			}
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
 		}
-	} catch (IOException e) {
-		System.out.println(e.getMessage());
+		return pessoasFisicas;
 	}
-	return cliente;
-	
-}
 
+	public List<PessoaJuridica> pessoasJuridicas() {
+
+		String pathPessoajuridica = "c:/temp/pessoajuridica.csv";
+		List<PessoaJuridica> pessoasJuridicas = new ArrayList<>();
+
+		try (BufferedReader br = new BufferedReader(new FileReader(pathPessoajuridica))) {
+
+			String line = br.readLine();
+			while (line != null) {
+				String[] fields = line.split(",");
+
+				pessoasJuridicas.add(new PessoaJuridica(Long.parseLong(fields[0]), fields[1], fields[2], fields[3], fields[4], fields[5]));
+				line = br.readLine();
+			}
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+		return pessoasJuridicas;
+	}
 }
