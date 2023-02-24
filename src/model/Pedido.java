@@ -1,6 +1,5 @@
-package entities;
+package model;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -75,15 +74,30 @@ public class Pedido {
 		
 
 	}
-	public Double trocarDinheiro(double valorCliente, double valorDinheiro){		
-		return valorDinheiro - valorCliente;
+	public Double trocarDinheiro(double valorCliente, double valorDinheiro, int tipoEntrega){
+		double calculoTroco = 0;
+		if (tipoEntrega == 1){
+			 calculoTroco = valorDinheiro - valorCliente;
+		} else if (tipoEntrega == 2) {
+			calculoTroco = valorDinheiro - valorCliente;
+		}
+		return calculoTroco;
+	}
+
+	public void imprimirNota(int tipoEntrega,List<Pedido> pedidoList ){
+		if (tipoEntrega == 1){
+			System.out.println("Taxa de entrega R$10.00 ");
+			System.out.printf("Total Nota: R$ %.2f\n",(calcularPedido(pedidoList) + 10.00));
+			System.out.println("O seu pedido sera entregue em até 90 minutos.");
+		} else if (tipoEntrega == 2) {
+			System.out.printf("Total Nota: R$ %.2f\n",(calcularPedido(pedidoList)));
+			System.out.println("Tempo estimado para retirada é de 30 minutos. ");
+		}
 	}
 
 	@Override
 	public String toString() {
 		return "Pedido [id=" + id + ", nomeItem=" + nomeItem + ", quantidade=" + quantidade + ", valor=" + valor + "]";
 	}
-
 	
 }
-
