@@ -6,7 +6,8 @@
 
 <div id='inicio'/> 
 
-Este projeto faz parte da finalização do Bloco 1 do Curso Pessoa Desenvolvedora da Generation Brasil.
+Este projeto faz parte da finalização do Bloco 1 do Curso Pessoa Desenvolvedora da [Generation Brasil](https://brazil.generation.org/).
+
 <br>Aqui aplicamos os conceitos de:
 <br>
 <br>
@@ -58,7 +59,7 @@ Sistema desenvolvimento em Java através dos conceitos de Orientação a Objetos
 ```
 
 ### 🎲 Dados ###
-Para o input, manipulação e testes através de dados locais, utilizamos a classe BufferedReader com o objeto FileReader para leitura de arquivos **.csv** e posterior método para criação de listas que serviram para a base nas listas de Produtos e Clientes.
+Para o input, manipulação e testes através de dados locais, utilizamos a classe *BufferedReader* com o objeto *FileReader* para leitura de arquivos **.csv** e posterior método para criação de listas que serviram para a base nas listas de Produtos e Clientes.
 
 ```
 // Exemplo de dados enviados pelo .csv 
