@@ -35,7 +35,7 @@ Tivemos como base o principal desafio para estabelecimentos que ainda não possu
 <br>
 
 ## Sobre o desenvolvimento do sistema ##
-Sistema desenvolvimdo em Java utilizando os conceitos de Orientação a Objetos.
+Sistema desenvolvido em Java utilizando os conceitos de Orientação a Objetos.
 
 ### ✏️ Diagrama de Classes ###
 <div align="center">
