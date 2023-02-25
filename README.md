@@ -2,9 +2,9 @@
 <img src="/logo.png" alt="drawing"width="450"/>
 </div>
 
-## Projeto Java ##
-
 <div id='inicio'/> 
+
+## Projeto Java ##
 
 Este projeto faz parte da finalização do Bloco 1 do Curso Pessoa Desenvolvedora da [Generation Brasil](https://brazil.generation.org/).
 
@@ -28,7 +28,7 @@ Tivemos como base o principal desafio para estabelecimentos que ainda não possu
 - Cadastro de produtos e clientes (pessoa física e jurídica);
 - Opções de entrega;
 - Forma de pagamento;
-- Menu para efetuar pedido e emitir detalhamento
+- Menu para efetuar pedido e emitir detalhamento.
 
 ## Sobre o desenvolvimento do sistema ##
 Sistema desenvolvimento em Java através dos conceitos de Orientação a Objetos.
