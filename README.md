@@ -19,6 +19,7 @@ Este projeto faz parte da finalização do Bloco 1 do Curso Pessoa Desenvolvedor
 <br>
 ◽️ Collections⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ◽️ Exceptions
 
+<br>
 
 ## Sobre o tema ##  
 ### 🍧 Sistema para Sorveterias ###
@@ -30,8 +31,11 @@ Tivemos como base o principal desafio para estabelecimentos que ainda não possu
 - Forma de pagamento;
 - Menu para efetuar pedido e emitir detalhamento.
 
+
+<br>
+
 ## Sobre o desenvolvimento do sistema ##
-Sistema desenvolvimento em Java através dos conceitos de Orientação a Objetos.
+Sistema desenvolvimdo em Java utilizando os conceitos de Orientação a Objetos.
 
 ### ✏️ Diagrama de Classes ###
 <div align="center">
@@ -73,12 +77,18 @@ Para o input, manipulação e testes através de dados locais, utilizamos a clas
 
 ### 📽 Execução ###
 //video de execução
+<br>
+<br>
+
+<br>
 
 ### 💻 Desenvolvedores ###
 
 [<img src="https://avatars.githubusercontent.com/u/97362216?v=4" width=100 > <br> <sub> Lia Laurindo </sub>](https://github.com/lialaurindo) | [<img src="https://avatars.githubusercontent.com/u/100010843?v=4" width=100 > <br> <sub> Jaine Santos</sub>](https://github.com/JaineSantos0) | [<img src="https://avatars.githubusercontent.com/u/123555504?v=4" width=100 > <br> <sub> Andreza Silvestre </sub>](https://github.com/Deekahass) | [<img src="https://avatars.githubusercontent.com/u/105376533?v=4=" width=100 > <br> <sub> Dener Verçosa </sub>](https://github.com/denervercosa) | [<img src="https://avatars.githubusercontent.com/u/114762538?v=4" width=100 > <br> <sub> Kelvin Souza </sub>](https://github.com/KeelvinW) | [<img src="https://avatars.githubusercontent.com/u/123783746?v=4" width=100 > <br> <sub> Fábio Martins </sub>](https://github.com/martinsdfabio) | [<img src="https://avatars.githubusercontent.com/u/123500218?v=4" width=100 > <br> <sub> Nicolas Albuquerque</sub>](https://github.com/NicolasAlbuquerque)
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 
+
+<br>
 
 ## 💟 Agradecimentos ##
 **É o Grupo 2!**
