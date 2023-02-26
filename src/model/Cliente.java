@@ -64,10 +64,10 @@ public class Cliente{
 		this.email = email;
 	}
 
-	public void imprimirPessoaFisica(List<PessoaFisica> pessoaFisicaList, String cpf) {
+	public void imprimirPessoaFisica(List<PessoaFisica> pessoaFisicaList, String cpf, int tipoEntrega) {
 
 	}
-	public void imprimirPessoaJuridica(List<PessoaJuridica> pessoaJuridicaList, String cnpj) {
+	public void imprimirPessoaJuridica(List<PessoaJuridica> pessoaJuridicaList, String cnpj, int tipoEntrega) {
 
 	}
 

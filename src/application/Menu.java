@@ -30,59 +30,59 @@ public class Menu {
 		List<Produto> sorvetesPersonalizados = lerArquivo.sorvetePersonalizado();
 		List<PessoaFisica> pessoasFisicas = lerArquivo.pessoasFisicas();
 		List<PessoaJuridica> pessoasJuridicas = lerArquivo.pessoasJuridicas();
-		
+
 		System.out.println(Cores.TEXT_PURPLE_BOLD + ""
-		         + "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠔⠚⠉⠉⠙⠲⣤⠀⠀⠀\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⠀⠀⠀⠀⠀⠀⠈⢻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣴⣿⠛⡇⠀⠀⠀⠀⠀⠀⠀⠀⡠⠃⢹⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⡿⠋⣇⠀⠘⠦⣀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⡟⢿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⡿⠁⠀⠘⣷⣦⣤⣀⣀⣀⣀⣀⣀⣠⣤⣾⣿⡟⠁⠀⠹⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⠁⠀⠀⠀⠸⡻⠽⣿⣛⣛⣻⣿⣻⣿⣿⣿⡿⠀⠀⠀⠀⢹⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⡇⠀⠀⠀⠀⠀⠳⢤⣤⣤⣤⣤⣴⣿⣿⣿⠿⠃⠀⠀⠀⠀⠈⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡇⠀⠀⠀⠀⠀⠀⠘⡏⢫⡝⠛⢯⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡍⠑⠀⡼⠱⡀⢸⣉⡱⠀⣇⠀⡇⢸⠉⠉⠀⠋⡏⠃⢸⡋⠉⠀⢠⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣘⣦⠀⢣⡰⠁⢸⠈⢆⠀⠘⡼⠀⢸⣉⣀⠀⠀⡇⠀⢸⣉⣀⠀⠸⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠉⠻⣿⣯⣍⡉⠉⠉⠹⣿⡿⠉⠉⠉⣉⣭⣿⡿⠋⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
-				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠻⠿⣿⣶⣶⣿⣷⣶⣾⡿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
-		
-		System.out.println("");
-		System.out.println(Cores.TEXT_WHITE_BOLD 
-				+"         Funcionamento: Terça a Domingo das 9h às 23h | Segunda-feira: Fechado");
-		System.out.println("            Formas de Pagamento: Dinheiro, Pix | Cartão de Débito e Crédito");
-		System.out.println("                              Pedido Mínimo: R$ 25,00");
-		System.out.println("                 Taxa de Entrega: R$ 10,00 | Tempo Estimado: 30min - 90min\n\n");
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀             ⢀⠔⠚⠉⠉⠙⠲⣤⠀⠀⠀             \r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀             ⡰⠁⠀⠀⠀⠀⠀⠀⠈⢻⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  \r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀             ⢀⣠⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀  \r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀             ⣴⣿⠛⡇⠀⠀⠀⠀⠀⠀⠀⠀⡠⠃⢹⣿⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀            .⣴⡿⠋⣇⠀⠘⠦⣀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⡟⢿⣷⡄⠀⠀⠀⠀⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀             ⢀⣾⡿⠁⠀⠘⣷⣦⣤⣀⣀⣀⣀⣀⣀⣠⣤⣾⣿⡟⠁⠀⠹⣿⡄⠀⠀⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀              ⣼⣿⠁⠀⠀⠀⠸⡻⠽⣿⣛⣛⣻⣿⣻⣿⣿⣿⡿⠀⠀⠀⠀  ⢹⣿⡀⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀               ⢀⣿⡇⠀⠀⠀⠀⠀⠳⢤⣤⣤⣤⣤⣴⣿⣿⣿⠿⠃⠀⠀⠀⠀  ⠈⣿⡇⠀⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀                ⢸⣿⡇⠀⠀⠀⠀⠀⠀⠘⡏⢫⡝⠛⢯⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀    ⣿⡇⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀               ⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠀⠀⠀⠀\r\n" + Cores.TEXT_RESET + Cores.TEXT_WHITE_BOLD
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀                ⠸⡍⠑ ⡼⠱ ⢸⣉⡱ ⣇⠀⡇⢸⠉⠉ ⠋⡏⠃⢸⡋⠉⢠⠋⠉⠀⠀⠀⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀               ⢠⣘⣦ ⢣⡰ ⢸⠈⢆ ⠘⡼ ⢸⣉⣀⠀ ⡇  ⢸⣉⣀⠸⣄⣀⠀⠀⠀⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\r\n" + Cores.TEXT_RESET + Cores.TEXT_PURPLE_BOLD
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀               ⠉⠉⠉⠉⠉⠉⠉⠻⣿⣯⣍⡉⠉⠉⠹⣿⡿⠉⠉⠉⣉⣭⣿⡿⠋⠉⠉⠉⠉⠀⠀⠀⠀⠀\r\n"
+				+ "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀                ⠈⠙⠻⠿⣿⣶⣶⣿⣷⣶⣾⡿⠿⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
+
+		System.out.println();
+		System.out.println(Cores.TEXT_GREEN_BOLD_BRIGHT
+				+ "                 Funcionamento: Terça a Domingo das 9h às 23h | Segunda-feira: Fechado");
+		System.out.println("                    Formas de Pagamento: Dinheiro, Pix | Cartão de Débito e Crédito");
+		System.out.println("                                       Pedido Mínimo: R$ 25,00");
+		System.out.println("                       Taxa de Entrega: R$ 10,00 | Tempo Estimado: 30min - 90min\n\n");
 
 		String documento = " ";
 		int tipoPessoa = 0;
 		Cliente pessoaFisica = new PessoaFisica();
 		Cliente pessoaJuridica = new PessoaJuridica();
 		do {
-			System.out.println(Cores.TEXT_WHITE_BOLD 
+			System.out.println(Cores.TEXT_CYAN_BOLD_BRIGHT
 					+ " _____________________________________________________________________________________________________\n"
-					+ "                              ACESSO                               "
+					+ "                                               ACESSO                                                   "
 					+ "\n _____________________________________________________________________________________________________\n");
-			System.out.println(" Digite (1) Pessoa Física | (2) Pessoa Jurídica: ");
+			System.out.print(Cores.TEXT_BLUE_BOLD + " Digite (1) Pessoa Física | (2) Pessoa Jurídica: ");
 			System.out.print(" ");
 			sc.skip("\\R?");
 			tipoPessoa = sc.nextInt();
 
 			switch (tipoPessoa) {
 				case 1 -> {
-					System.out.print(" Digite seu CPF: ");
+					System.out.print(Cores.TEXT_BLUE_BOLD + " Digite seu CPF: ");
 					sc.skip("\\R?");
 					documento = sc.nextLine();
 					pessoaFisica.validarDadoPessoaFisica(pessoasFisicas, documento);
 				}
 				case 2 -> {
-					System.out.print(" Digite seu CNPJ: ");
+					System.out.print(Cores.TEXT_BLUE_BOLD + " Digite seu CNPJ: ");
 					sc.skip("\\R?");
 					documento = sc.nextLine();
 					pessoaJuridica.validarDadoPessoaJuridica(pessoasJuridicas, documento);
 				}
-				default -> System.out.println(" Opção Incorreta!\n");
+				default -> System.out.println(Cores.TEXT_RED_BOLD_BRIGHT + " Opção Incorreta!\n");
 			}
 		} while (tipoPessoa != 1 && tipoPessoa != 2);
 
@@ -90,69 +90,65 @@ public class Menu {
 		long id = 0;
 		int quantidade = 0;
 		char resp = 'I';
-		
-		
 
+		String mensagemMenu = " Carregando Menu...";
+		keyPress(mensagemMenu);
 		do {
-			System.out.println(Cores.TEXT_WHITE_BOLD + 
+			System.out.println(Cores.TEXT_CYAN_BOLD_BRIGHT +
 					" _____________________________________________________________________________________________________\n"
-					+ "                               MENU                               "
+					+ "                                               MENU                                                   "
 					+ "\n _____________________________________________________________________________________________________\n");
-			
-			System.out.println(
-					  "        .-\"`'\"-.\r\n"
+
+			System.out.println(Cores.TEXT_PURPLE_BOLD +
+					"        .-\"`'\"-.\r\n"
 					+ "       /        \\\r\n"
 					+ "       |        |\r\n"
 					+ "       /'---'--`\\\r\n"
-					+ "      |          |       [1] SORVETE DE MASSA \r\n"
-					+ "      \\.--.---.-./       [2] COPO ATÉ 3 SABORES\r\n"
-					+ "      (_.--._.-._)       [3] PICOLÉS \r\n"
-					+ "        \\=-=-=-/         [4] ADICIONAIS\r\n"
+					+ "      |          |       " + Cores.TEXT_GREEN_BOLD_BRIGHT + " [1] SORVETE DE MASSA \r\n" + Cores.TEXT_PURPLE_BOLD
+					+ "      \\.--.---.-./      " + Cores.TEXT_BLUE_BOLD_BRIGHT + "  [2] COPO ATÉ 3 SABORES\r\n" + Cores.TEXT_PURPLE_BOLD
+					+ "      (_.--._.-._)       " + Cores.TEXT_YELLOW_BOLD_BRIGHT + " [3] PICOLÉS \r\n" + Cores.TEXT_PURPLE_BOLD
+					+ "        \\=-=-=-/        " + Cores.TEXT_RED_BOLD_BRIGHT + "  [4] ADICIONAIS\r\n" + Cores.TEXT_PURPLE_BOLD
 					+ "         \\=-=-/\r\n"
 					+ "          \\=-/\r\n"
-					+ "           \\/\n" );
-			
-			System.out.print("\n" + " Digite o número de uma categoria: ");
+					+ "           \\/\n");
+
+			System.out.print(Cores.TEXT_PURPLE_BOLD_BRIGHT + "\n" + " Digite o número de uma categoria: ");
 			sc.skip("\\R?");
-			System.out.println(" ");
-			
+
 			int categoria = sc.nextInt();
 
-			while(categoria != 1 && categoria != 2 && categoria != 3 && categoria != 4){
-				System.out.println(" Opção inválida!");
-						
-						System.out.println(
-						"          .-\"`'\"-.\r\n"
+			while (categoria != 1 && categoria != 2 && categoria != 3 && categoria != 4) {
+				System.out.println(Cores.TEXT_RED_BOLD_BRIGHT + " Opção inválida!");
+
+				System.out.println(Cores.TEXT_PURPLE_BOLD_BRIGHT +
+						"        .-\"`'\"-.\r\n"
 						+ "       /        \\\r\n"
 						+ "       |        |\r\n"
 						+ "       /'---'--`\\\r\n"
-						+ "      |          |\r\n"
-						+ "      \\.--.---.-./\r\n"
-						+ "      (_.--._.-._)\r\n"
-						+ "        \\=-=-=-/\r\n"
+						+ "      |          |       " + Cores.TEXT_GREEN_BOLD_BRIGHT + " [1] SORVETE DE MASSA \r\n" + Cores.TEXT_PURPLE_BOLD
+						+ "      \\.--.---.-./      " + Cores.TEXT_BLUE_BOLD_BRIGHT + "  [2] COPO ATÉ 3 SABORES\r\n" + Cores.TEXT_PURPLE_BOLD
+						+ "      (_.--._.-._)       " + Cores.TEXT_YELLOW_BOLD_BRIGHT + " [3] PICOLÉS \r\n" + Cores.TEXT_PURPLE_BOLD
+						+ "        \\=-=-=-/        " + Cores.TEXT_RED_BOLD_BRIGHT + "  [4] ADICIONAIS\r\n" + Cores.TEXT_PURPLE_BOLD
 						+ "         \\=-=-/\r\n"
 						+ "          \\=-/\r\n"
-						+ "           \\/\n" 
-						+ "\n 1- Pote Sorvete de Massa - 2l\n"
-						+ "  2- Copo 500ml - até 3 sabores\n" 
-						+ " 3- Picolés\n" 
-						+ " 4- Adicionais\n");
-						
+						+ "           \\/\n");
+
 				System.out.print("\n" + " Digite o número de uma categoria: ");
 				sc.skip("\\R?");
-				System.out.println(" ");
 
 				categoria = sc.nextInt();
 			}
-
+			String mensagemCategoria = " Carregando Categoria...";
+			keyPress(mensagemCategoria);
 			switch (categoria) {
 
 				case 1:
+					System.out.println();
 					sorvetesMassa.forEach(System.out::println);
-					System.out.print("\n" + " Digite o numero do item: ");
+					System.out.print(Cores.TEXT_BLUE_BOLD + "\n" + " Digite o numero do item: ");
 					sc.skip("\\R?");
 					id = sc.nextInt();
-					System.out.print(" Digite a quantidade: ");
+					System.out.print(Cores.TEXT_BLUE_BOLD + " Digite a quantidade: ");
 					sc.skip("\\R?");
 					quantidade = sc.nextInt();
 
@@ -164,25 +160,27 @@ public class Menu {
 					}
 					break;
 				case 2:
+					System.out.println();
 					sorvetesPersonalizados.forEach(System.out::println);
-					System.out.println(
-							"           ()\r\n"
-							+ "        .-\"`'\"-.\r\n"
-							+ "       /        \\\r\n"
-							+ "       \\        /\r\n"
-							+ "       /'---'--`\\\r\n"
-							+ "      |          |\r\n"
-							+ "      \\_.--.__.-./\r\n"
-							+ "      (_.__..__._)\r\n"
-							+ "        [=-=-=-]\r\n"
-							+ "         |=-=-|\r\n"
-							+ "         |-=-=|\r\n"
-							+ "         '-==-'");
-					
-					System.out.print("\n" + " Digite o numero do item: ");
+					System.out.println(Cores.TEXT_CYAN_BOLD_BRIGHT + ""
+							+ Cores.TEXT_GREEN + "            ,\n"
+							+ Cores.TEXT_RED_BOLD_BRIGHT + "           ()\r\n"
+							+ Cores.TEXT_CYAN_BOLD_BRIGHT + "        .-\"`'\"-.\r\n"
+							+ Cores.TEXT_CYAN_BOLD_BRIGHT + "       /        \\\r\n"
+							+ Cores.TEXT_CYAN_BOLD_BRIGHT + "       \\        /\r\n"
+							+ Cores.TEXT_CYAN_BOLD_BRIGHT + "       /'---'--`\\\r\n"
+							+ Cores.TEXT_CYAN_BOLD_BRIGHT + "      |          |\r\n"
+							+ Cores.TEXT_CYAN_BOLD_BRIGHT + "      \\_.--.__.-./\r\n"
+							+ Cores.TEXT_CYAN_BOLD_BRIGHT + "      (_.__..__._)\r\n"
+							+ Cores.TEXT_YELLOW_BOLD_BRIGHT + "        [=-=-=-]\r\n"
+							+ Cores.TEXT_YELLOW_BOLD_BRIGHT + "         |=-=-|\r\n"
+							+ Cores.TEXT_YELLOW_BOLD_BRIGHT + "         |-=-=|\r\n"
+							+ Cores.TEXT_YELLOW_BOLD_BRIGHT + "         '-==-'");
+
+					System.out.print(Cores.TEXT_BLUE_BOLD + "\n" + " Digite o numero do item: ");
 					sc.skip("\\R?");
 					id = sc.nextInt();
-					System.out.print(" Digite a quantidade: ");
+					System.out.print(Cores.TEXT_BLUE_BOLD + " Digite a quantidade: ");
 					sc.skip("\\R?");
 					quantidade = sc.nextInt();
 
@@ -194,25 +192,27 @@ public class Menu {
 					}
 					break;
 				case 3:
+					System.out.println();
 					picoles.forEach(System.out::println);
-					System.out.println(
-							"              .-.\r\n"
-							+ "           ,'/ //\\\r\n"
-							+ "          /// // /)\r\n"
-							+ "         /// // //|\r\n"
-							+ "        /// // ///\r\n"
-							+ "       /// // ///\r\n"
-							+ "      (`: // ///\r\n"
-							+ "       `;`: ///\r\n"
-							+ "       / /:`:/\r\n"
-							+ "      / /  `'\r\n"
-							+ "     / /\r\n"
-							+ "    (_/  \r\n"
+					System.out.println(""
+							+ Cores.TEXT_BLUE_BOLD + "                     .-.\r\n"
+							+ Cores.TEXT_BLUE_BOLD + "                   ,'/ //\\\r\n"
+							+ Cores.TEXT_BLUE_BOLD + "                 /// // /)\r\n"
+							+ Cores.TEXT_BLUE_BOLD + "                /// // //|\r\n"
+							+ Cores.TEXT_BLUE_BOLD + "               /// // ///\r\n"
+							+ Cores.TEXT_BLUE_BOLD + "              /// // ///\r\n"
+							+ Cores.TEXT_BLUE_BOLD + "             (`: // ///\r\n"
+							+ Cores.TEXT_BLUE_BOLD + "              `;`: ///\r\n"
+							+ Cores.TEXT_BLUE_BOLD + "                 :`:/\r"
+							+ Cores.TEXT_YELLOW_BOLD_BRIGHT + "               / /\r\n"
+							+ Cores.TEXT_YELLOW_BOLD_BRIGHT + "              / /\r\n"
+							+ Cores.TEXT_YELLOW_BOLD_BRIGHT + "             / /\r\n"
+							+ Cores.TEXT_YELLOW_BOLD_BRIGHT + "            (_/  \r\n"
 							+ "");
-					System.out.print("\n" +" Digite o numero do item: ");
+					System.out.print(Cores.TEXT_BLUE_BOLD + "\n" + " Digite o numero do item: ");
 					sc.skip("\\R?");
 					id = sc.nextInt();
-					System.out.print(" Digite a quantidade: ");
+					System.out.print(Cores.TEXT_BLUE_BOLD + " Digite a quantidade: ");
 					sc.skip("\\R?");
 					quantidade = sc.nextInt();
 
@@ -224,24 +224,25 @@ public class Menu {
 					}
 					break;
 				case 4:
+					System.out.println();
 					adicionais.forEach(System.out::println);
 					System.out.println("\n"
-							+ "                    __\r\n"
-							+ "                   /.-\r\n"
-							+ "           ______ //\r\n"
-							+ "          /______'/|\r\n"
-							+ "          [       ]|\r\n"
-							+ "          [       ]|\r\n"
-							+ "          [ Suco  ]|\r\n"
-							+ "          [  _\\_  ]|\r\n"
-							+ "          [  :::  ]|\r\n"
-							+ "          [   :'  ]/\r\n"
-							+ "          '-------'");
-					
-					System.out.print("\n" + " Digite o numero do item: ");
+							+ Cores.TEXT_WHITE_BOLD_BRIGHT + "                    //\r\n"
+							+ Cores.TEXT_WHITE_BOLD_BRIGHT + "                   //\r\n"
+							+ Cores.TEXT_BLACK_BOLD_BRIGHT + "           ______ " + Cores.TEXT_WHITE_BOLD_BRIGHT + "//\r\n"
+							+ Cores.TEXT_BLACK_BOLD_BRIGHT + "          /______'/|\r\n"
+							+ Cores.TEXT_BLACK_BOLD_BRIGHT + "          [       ]|\r\n"
+							+ Cores.TEXT_BLACK_BOLD_BRIGHT + "          [       ]|\r\n"
+							+ Cores.TEXT_BLACK_BOLD_BRIGHT + "          [ Suco  ]|\r\n"
+							+ Cores.TEXT_BLACK_BOLD_BRIGHT + "          [  _\\_  ]|\r\n"
+							+ Cores.TEXT_BLACK_BOLD_BRIGHT + "          [  :::  ]|\r\n"
+							+ Cores.TEXT_BLACK_BOLD_BRIGHT + "          [   :'  ]/\r\n"
+							+ Cores.TEXT_BLACK_BOLD_BRIGHT + "          '-------'");
+
+					System.out.print(Cores.TEXT_BLUE_BOLD + "\n" + " Digite o numero do item: ");
 					sc.skip("\\R?");
 					id = sc.nextInt();
-					System.out.print(" Digite a quantidade: ");
+					System.out.print(Cores.TEXT_BLUE_BOLD + " Digite a quantidade: ");
 					sc.skip("\\R?");
 					quantidade = sc.nextInt();
 
@@ -253,18 +254,16 @@ public class Menu {
 					}
 					break;
 			}
-			System.out.print("\n" + " Deseja inserir mais um produto? Digite S ou N: ");
+			System.out.print(Cores.TEXT_BLUE_BOLD + "\n" + " Deseja inserir mais um produto? Digite S ou N: ");
 			sc.skip("\\R?");
-			System.out.print(" ");
 			resp = sc.next().toUpperCase().charAt(0);
-
 		} while (resp == 'S');
 
 
 		Pedido pedidoCliente = new Pedido();
-		System.out.println(Cores.TEXT_WHITE_BOLD 
+		System.out.println(Cores.TEXT_CYAN_BOLD_BRIGHT
 				+ " _____________________________________________________________________________________________________\n\n"
-				+ "                          MEU PEDIDO                                 ");
+				+ "                                             MEU PEDIDO                                                 ");
 
 		pedidoList.forEach(System.out::println);
 
@@ -274,103 +273,81 @@ public class Menu {
 
 		int tipoEntrega = 0;
 		do {
-			System.out.println("\n\n" 
-					+ Cores.TEXT_WHITE_BOLD 
-					+" _____________________________________________________________________________________________________\n"
-					+ "                          ENTREGA                                 "
-					+ " \n_____________________________________________________________________________________________________");
-			
-			System.out.print("\n" + " Digite (1) para Delivery ou (2) Retirada:\n");
+			System.out.println("\n"
+					+ Cores.TEXT_CYAN_BOLD_BRIGHT
+					+ " _____________________________________________________________________________________________________\n"
+					+ "                                               ENTREGA                                                   "
+					+ "\n _____________________________________________________________________________________________________");
+
+			System.out.print(Cores.TEXT_BLUE_BOLD + "\n" + " Digite (1) para Delivery ou (2) Retirada:");
 			sc.skip("\\R?");
 			System.out.print(" ");
 			tipoEntrega = sc.nextInt();
-		}while (tipoEntrega != 1 && tipoEntrega != 2);
+		} while (tipoEntrega != 1 && tipoEntrega != 2);
 
 		double calculoTotal = 0;
-		if (tipoEntrega == 1){
+		if (tipoEntrega == 1) {
 			calculoTotal = pedidoCliente.calcularPedido(pedidoList) + 10;
-			System.out.printf(" Total com a Entrega: R$ %.2f\n",calculoTotal);
-			
+			System.out.printf(Cores.TEXT_BLUE_BOLD + " Total com a Entrega: R$ %.2f\n", calculoTotal);
+
 		} else if (tipoEntrega == 2) {
 			calculoTotal = valorCliente;
-			
+
 		}
-		
-		
-			System.out.println(Cores.TEXT_WHITE_BOLD 
+
+		String mensagemEntrega = " Confirmando Entrega...";
+		keyPress(mensagemEntrega);
+
+		System.out.println(Cores.TEXT_CYAN_BOLD_BRIGHT
 				+ " _____________________________________________________________________________________________________\n"
-				+ "                            PAGAMENTO                               "
-				+ " \n_____________________________________________________________________________________________________\n");
-		
-				System.out.println(" Formas de Pagamento disponíveis: Dinheiro, Pix | Cartão de Débito e Cartão de Crédito");
-				System.out.print(" Digite a forma de pagamento escolhida:");
-				sc.skip("\\R?");
-				System.out.print(" ");
-				String formaPagamento = sc.nextLine();
+				+ "                                            PAGAMENTO                                                 "
+				+ " \n _____________________________________________________________________________________________________\n");
+
+		System.out.println(Cores.TEXT_BLUE_BOLD + " Formas de Pagamento disponíveis: Dinheiro, Pix | Cartão de Débito e Cartão de Crédito");
+		System.out.print(Cores.TEXT_BLUE_BOLD + " Digite a forma de pagamento escolhida:");
+		sc.skip("\\R?");
+		System.out.print(" ");
+		String formaPagamento = sc.nextLine();
 		if (formaPagamento.equalsIgnoreCase("dinheiro")) {
-			System.out.print(" Digite o valor em dinheiro: R$ ");
+			System.out.print(Cores.TEXT_BLUE_BOLD + " Digite o valor em dinheiro: R$ ");
 			sc.skip("\\R?");
 			System.out.print(" ");
 			double valorDinheiro = sc.nextDouble();
 
-			while (valorDinheiro < calculoTotal){
-				System.out.print(" Valor em Dinheiro Insuficiente!\n");
-				System.out.print(" Digite o valor em dinheiro:");
+			while (valorDinheiro < calculoTotal) {
+				System.out.print(Cores.TEXT_BLUE_BOLD + " Valor em Dinheiro Insuficiente!\n");
+				System.out.print(Cores.TEXT_BLUE_BOLD + " Digite o valor em dinheiro:");
 				System.out.print(" ");
 				sc.skip("\\R?");
 				valorDinheiro = sc.nextDouble();
 			}
-			System.out.printf("Troco: R$ %.2f\n\n", pedidoCliente.trocarDinheiro(calculoTotal, valorDinheiro,tipoEntrega));
-			keyPress();
+			System.out.printf(Cores.TEXT_BLUE_BOLD + "Troco: R$ %.2f\n\n", pedidoCliente.trocarDinheiro(calculoTotal, valorDinheiro, tipoEntrega));
 		}
 
-			
+		String mensagemConfirmacao = " Imprimindo Nota...";
+		keyPress(mensagemConfirmacao);
+
 		pedidoCliente.imprimirNota(tipoEntrega, pedidoList);
 
-		if (tipoPessoa == 1) {
-			System.out.println(Cores.TEXT_WHITE_BOLD
-					+ " Dados para Entrega:\n");
-			pessoaFisica.imprimirPessoaFisica(pessoasFisicas, documento);
-			keyPress();
-			System.out.println(Cores.TEXT_WHITE_BOLD
-					+ "SORVETES DELICIOSOS A CAMINHO!\n\n"
-					+ "               ___\r\n"
-					+ "             /  _\\\r\n"
-					+ "             | /\\_|\r\n"
-					+ "          __-'' _'\r\n"
-					+ "         ----'-.\r\n"
-					+ "            |#\\#)_,_\r\n"
-					+ "            )##\\__ _\\__.-. \r\n"
-					+ "    -  .-  (###)   '---.  `.\r\n"
-					+ " -   __\\____`.#\\(      )  L(|\r\n"
-					+ "   .'__//\\    \\#)`-._.' / \\\\==.\r\n"
-					+ "  /_/_//\\_\\_  /#/  ### / //\\\\ \\\r\n"
-					+ "   |(________(##)___/-' '| (_) |\r\n"
-					+ "____\\___/_________________\\___/___________________________________________________________________");
-		} else if (tipoPessoa == 2) {
-			System.out.println(" Dados para Entrega:\n");
-			pessoaJuridica.imprimirPessoaJuridica(pessoasJuridicas, documento);
-			keyPress();
-			System.out.println("PEDIDO A CAMINHO!");
-		}
+		String mensagemFinalizando = " Finalizando Pedido...";
+		keyPress(mensagemFinalizando);
 
-		System.out.println(" Copyright ©️ 2023 - SORVETEC");
-		}
-		
+		pessoaFisica.imprimirPessoaFisica(pessoasFisicas, documento, tipoEntrega);
+		pessoaJuridica.imprimirPessoaJuridica(pessoasJuridicas, documento, tipoEntrega);
+	}
 
-	public static void keyPress() {
+	public static void keyPress(String mensagem) {
 
 		try {
 
-			System.out.println(Cores.TEXT_RESET + "\n\nPressione Enter para confirmar...");
+			System.out.println(Cores.TEXT_RESET + mensagem);
 			System.in.read();
 
 		} catch (IOException e) {
 
-			System.out.println("Você pressionou uma tecla diferente de enter!");
+			System.out.println(Cores.TEXT_RED_BOLD + "Você pressionou uma tecla diferente de enter!");
 
 		}
-	
 	
 	}
 	

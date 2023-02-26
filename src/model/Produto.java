@@ -1,5 +1,7 @@
 package model;
 
+import model.util.Cores;
+
 public class Produto {
 
 	private Long id;
@@ -61,7 +63,7 @@ public class Produto {
 	
 	@Override
 	public String toString() {
-		return String.format( " 🍧 %.2f ------------ ",precoUnitario) + " " + id + " " + nome + " " + sabor + " " ;
+		return String.format( Cores.TEXT_YELLOW_BOLD_BRIGHT + " 🍧 %.2f ------------ ",precoUnitario) + " " + id + " " + nome + " " + sabor + " " ;
 	}
 	
 
