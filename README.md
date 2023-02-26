@@ -10,14 +10,14 @@ Este projeto faz parte da finalização do Bloco 1 do Curso Pessoa Desenvolvedor
 
 <br>Aqui aplicamos os conceitos de:
 <br>
-<br>
-◽️ Entrada e saída de dados⠀⠀⠀⠀⠀⠀⠀⠀⠀◽️ Laços Condicionais
-<br>
-◽️ Laços de Repetição⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀◽️ Métodos e Modificadores de acesso
-<br>
-◽️ Classes, Atributos e Objetos⠀⠀⠀⠀⠀⠀⠀◽️ Herança e Sobrecarga
-<br>
-◽️ Collections⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ ◽️ Exceptions
+- Entrada e saída de dados⠀⠀⠀⠀⠀ 
+- Laços Condicionais
+- Laços de Repetição⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+- Métodos e Modificadores de acesso
+- Classes, Atributos e Objetos       
+- Herança e Sobrecarga
+- Collections⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀ 
+- Exceptions
 
 <br>
 
