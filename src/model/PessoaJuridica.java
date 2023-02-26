@@ -21,11 +21,13 @@ public class PessoaJuridica extends Cliente{
     public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
     }
+    
     @Override
     public void validarDadoPessoaJuridica(List<PessoaJuridica> pessoaJuridicaList, String cnpj) {
         for (PessoaJuridica pessoaJuridica: pessoaJuridicaList) {
             if (Objects.equals(pessoaJuridica.cnpj, cnpj)) {
-                System.out.println(pessoaJuridica.getNome());
+                System.out.println("\n" + "Olá, " + pessoaJuridica.getNome() + "!");
+                System.out.println(" Qual será o pedido de hoje? ");
             }
         }
     }

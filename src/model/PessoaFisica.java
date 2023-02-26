@@ -38,7 +38,8 @@ public class PessoaFisica extends Cliente{
     public void validarDadoPessoaFisica(List<PessoaFisica> pessoaFisicaList, String cpf) {
         for (PessoaFisica pessoaFisica: pessoaFisicaList) {
             if (pessoaFisica.getCpf().equals(cpf)) {
-                System.out.println(pessoaFisica.getNome());
+                System.out.println("\n" + " Olá, " + pessoaFisica.getNome() + "!");
+                System.out.println(" Qual será o pedido de hoje? ");
             }
         }
     }

@@ -1,7 +1,12 @@
 package model;
 
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Random;
+
+import model.util.Cores;
 
 public class Pedido {
 
@@ -66,14 +71,12 @@ public class Pedido {
 	public void confirmaPagamento(List<Pedido> pedidoList){
 
 		Random geraId = new Random();
+		System.out.println("\n" + " Número do Pedido: " + geraId.nextDouble());
+		System.out.printf(" Total Pedido: R$ %.2f", calcularPedido(pedidoList));
 		
-		System.out.println("Confirmar pedido");
-		System.out.println("Número do Pedido: " + geraId.nextInt());
-		
-		System.out.println("Total a pagar: " + calcularPedido(pedidoList));
-		
-
 	}
+	
+	
 	public Double trocarDinheiro(double valorCliente, double valorDinheiro, int tipoEntrega){
 		double calculoTroco = 0;
 		if (tipoEntrega == 1){
@@ -86,18 +89,94 @@ public class Pedido {
 
 	public void imprimirNota(int tipoEntrega,List<Pedido> pedidoList ){
 		if (tipoEntrega == 1){
-			System.out.println("Taxa de entrega R$10.00 ");
-			System.out.printf("Total Nota: R$ %.2f\n",(calcularPedido(pedidoList) + 10.00));
-			System.out.println("O seu pedido sera entregue em até 90 minutos.");
+
+		LocalDateTime dataHora = LocalDateTime.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+		String dataFormatada = dataHora.format(formatter);
+	
+			
+	        
+			System.out.println(
+					
+					"\n\n" +  "PEDIDO CONFIRMADO!\n"
+							
+					+ " _____________________________________________________________________________________________________\n"
+					
+					+ " ==================================================\n" 
+					+ " SORVETEC TECNOLOGIA LTDA"+"RUA JAVA, 0101\n"
+					+ " CEP.: 01.010-100 - ORIENTAÇÃO A OBJETOS/POO\n" 
+					+ " CONTATO.: 11 00 0000-0000\n"
+					+ " ==================================================\n" 
+					+ "                  Nº 56983\r\n"
+					+ " __________________________________________________\r\n" 
+					+ "            COMPROVANTE DE VENDA \r\n" 
+					+ "        *** NÃO É DOCUMENTO FISCAL ***\r\n");
+					
+			System.out.println(" Data : " + dataFormatada + "\n" +
+					" __________________________________________________\r\n");
+
+			System.out.printf("                          SUBTOTAL: R$ %.2f\n", calcularPedido(pedidoList));
+			System.out.printf("                          FRETE: R$ 10.00\n");
+			System.out.printf("                          TOTAL: R$ %.2f\n", (calcularPedido(pedidoList) + 10.00));
+			
+			System.out.println(
+					"\r\n"
+					+ " ________________________________________________\r\n"
+					+ "         *** NÃO É DOCUMENTO FISCAL ***\r\n"
+					+ " ________________________________________________\r\n"
+					+ " OBS.: "
+					+ " Seu pedido sera entregue em até 90 minutos.\r\n"
+					+ " ==================================================\n");
+			
+			
 		} else if (tipoEntrega == 2) {
-			System.out.printf("Total Nota: R$ %.2f\n",(calcularPedido(pedidoList)));
-			System.out.println("Tempo estimado para retirada é de 30 minutos. ");
+			
+			LocalDateTime dataHora = LocalDateTime.now();
+			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+			String dataFormatada = dataHora.format(formatter);
+		        
+				System.out.println(
+						
+						" PEDIDO CONFIRMADO!\n"
+								
+						+ " _____________________________________________________________________________________________________\n"
+						
+						+ " ==================================================\n" 
+						+ " SORVETEC TECNOLOGIA LTDA"+"RUA JAVA, 0101\n"
+						+ " CEP.: 01.010-100 - ORIENTAÇÃO A OBJETOS/POO\n" 
+						+ " CONTATO.: 11 00 0000-0000\n"
+						+ " ==================================================\n" 
+						+ "                  Nº 56983\r\n"
+						+ " __________________________________________________\r\n" 
+						+ "            COMPROVANTE DE VENDA \r\n" 
+						+ "        *** NÃO É DOCUMENTO FISCAL ***\r\n");
+						
+				System.out.println(" Data : " + dataFormatada + "\n" +
+						" __________________________________________________\r\n");
+
+				System.out.printf("                          SUBTOTAL: R$ %.2f\n", calcularPedido(pedidoList));
+				System.out.printf("                          FRETE: R$ 00.00\n");
+				System.out.printf("                          TOTAL: R$ %.2f\n", (calcularPedido(pedidoList)));
+				
+				System.out.println(
+						"\r\n"
+						+ " ________________________________________________\r\n"
+						+ "         *** NÃO É DOCUMENTO FISCAL ***\r\n"
+						+ " ________________________________________________\r\n"
+						+ " OBS.: "
+						+ " Tempo estimado para retirada é de 30 minutos..\r\n"
+						+ " ==================================================\n");		
 		}
 	}
 
+
 	@Override
 	public String toString() {
-		return "Pedido [id=" + id + ", nomeItem=" + nomeItem + ", quantidade=" + quantidade + ", valor=" + valor + "]";
+		
+		return   " _____________________________________________________________________________________________________\n"
+				+ "  CÓD.                DESCRIÇÃO                 QTDE.         V. UNITARIO\n"
+				+ "   " + id + "                  " + nomeItem + "             " + quantidade + "       " + String.format("        R$ %.2f", valor);
+				
 	}
 	
 }
