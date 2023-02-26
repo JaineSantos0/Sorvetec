@@ -67,13 +67,13 @@ public class Cliente{
 	public void imprimirPessoaFisica(List<PessoaFisica> pessoaFisicaList, String cpf) {
 
 	}
-	public void imprimirPessoaJuridica(List<PessoaJuridica> pessoaJuridicaList, String cpf) {
+	public void imprimirPessoaJuridica(List<PessoaJuridica> pessoaJuridicaList, String cnpj) {
 
 	}
 
-	public void validarDadoPessoaFisica(List<PessoaFisica> clienteList, String telefone) {
+	public void validarDadoPessoaFisica(List<PessoaFisica> clienteList, String cpf) {
 	}
 
-	public void validarDadoPessoaJuridica(List<PessoaJuridica> clienteList, String telefone) {
+	public void validarDadoPessoaJuridica(List<PessoaJuridica> clienteList, String cnpj) {
 	}
 }
