@@ -58,6 +58,16 @@ public class Pedido {
 		this.valor = valor;
 	}
 
+	public Long gerarNumeroPedido(){
+		Random idAleatorios = new Random();
+		id = idAleatorios.nextLong();
+
+		while(id <= 0){
+			id = idAleatorios.nextLong();
+		}
+		return id;
+	}
+
 	public Double calcularPedido(List<Pedido> pedidoList){
 
 		double soma=0;
@@ -69,10 +79,9 @@ public class Pedido {
 	}
 
 	public void confirmaPagamento(List<Pedido> pedidoList){
-
-		Random geraId = new Random();
-		System.out.println("\n" + " Número do Pedido: " + geraId.nextDouble());
-		System.out.printf(" Total Pedido: R$ %.2f", calcularPedido(pedidoList));
+		Long geraId = gerarNumeroPedido();
+		System.out.println(Cores.TEXT_YELLOW_BOLD_BRIGHT + "\n" + " Número do Pedido: " + geraId);
+		System.out.printf(Cores.TEXT_YELLOW_BOLD_BRIGHT + " Total Pedido: R$ %.2f", calcularPedido(pedidoList));
 		
 	}
 	
@@ -96,9 +105,7 @@ public class Pedido {
 	
 			
 	        
-			System.out.println(
-					
-					"\n\n" +  "PEDIDO CONFIRMADO!\n"
+			System.out.println(Cores.TEXT_YELLOW_BOLD_BRIGHT + ""
 							
 					+ " _____________________________________________________________________________________________________\n"
 					
@@ -112,14 +119,14 @@ public class Pedido {
 					+ "            COMPROVANTE DE VENDA \r\n" 
 					+ "        *** NÃO É DOCUMENTO FISCAL ***\r\n");
 					
-			System.out.println(" Data : " + dataFormatada + "\n" +
+			System.out.println(Cores.TEXT_YELLOW_BOLD_BRIGHT + " Data : " + dataFormatada + "\n" +
 					" __________________________________________________\r\n");
 
 			System.out.printf("                          SUBTOTAL: R$ %.2f\n", calcularPedido(pedidoList));
-			System.out.printf("                          FRETE: R$ 10.00\n");
+			System.out.print("                          FRETE: R$ 10.00\n");
 			System.out.printf("                          TOTAL: R$ %.2f\n", (calcularPedido(pedidoList) + 10.00));
 			
-			System.out.println(
+			System.out.println(Cores.TEXT_YELLOW_BOLD_BRIGHT +
 					"\r\n"
 					+ " ________________________________________________\r\n"
 					+ "         *** NÃO É DOCUMENTO FISCAL ***\r\n"
@@ -135,8 +142,8 @@ public class Pedido {
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 			String dataFormatada = dataHora.format(formatter);
 		        
-				System.out.println(
-						
+				System.out.println(Cores.TEXT_YELLOW_BOLD_BRIGHT +
+
 						" PEDIDO CONFIRMADO!\n"
 								
 						+ " _____________________________________________________________________________________________________\n"
@@ -151,14 +158,14 @@ public class Pedido {
 						+ "            COMPROVANTE DE VENDA \r\n" 
 						+ "        *** NÃO É DOCUMENTO FISCAL ***\r\n");
 						
-				System.out.println(" Data : " + dataFormatada + "\n" +
+				System.out.println(Cores.TEXT_YELLOW_BOLD_BRIGHT + " Data : " + dataFormatada + "\n" +
 						" __________________________________________________\r\n");
 
 				System.out.printf("                          SUBTOTAL: R$ %.2f\n", calcularPedido(pedidoList));
-				System.out.printf("                          FRETE: R$ 00.00\n");
+				System.out.print("                          FRETE: R$ 00.00\n");
 				System.out.printf("                          TOTAL: R$ %.2f\n", (calcularPedido(pedidoList)));
 				
-				System.out.println(
+				System.out.println(Cores.TEXT_YELLOW_BOLD_BRIGHT +
 						"\r\n"
 						+ " ________________________________________________\r\n"
 						+ "         *** NÃO É DOCUMENTO FISCAL ***\r\n"
@@ -173,9 +180,9 @@ public class Pedido {
 	@Override
 	public String toString() {
 		
-		return   " _____________________________________________________________________________________________________\n"
-				+ "  CÓD.                DESCRIÇÃO                 QTDE.         V. UNITARIO\n"
-				+ "   " + id + "                  " + nomeItem + "             " + quantidade + "       " + String.format("        R$ %.2f", valor);
+		return   Cores.TEXT_CYAN_BOLD_BRIGHT + " _____________________________________________________________________________________________________\n"
+				+ Cores.TEXT_YELLOW_BOLD_BRIGHT + "  CÓD.                DESCRIÇÃO                 QTDE.         V. UNITARIO\n"
+				+ Cores.TEXT_YELLOW_BOLD_BRIGHT + "   " + id + "                  " + nomeItem + "             " + quantidade + "       " + String.format("        R$ %.2f", valor);
 				
 	}
 	
