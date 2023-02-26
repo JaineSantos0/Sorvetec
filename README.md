@@ -77,7 +77,7 @@ Para o input, manipulação e testes através de dados locais, utilizamos a clas
 
 ### 📽 Execução ###
 <div align="center">
-<img src="/view/executa-menu.gif" alt="drawing"width="700"/>
+<img src="/view/executa-menu-3.gif" alt="drawing"width="700"/>
 </div>
 
 <br>
