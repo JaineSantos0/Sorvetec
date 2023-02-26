@@ -1,5 +1,5 @@
 <div align="center">
-<img src="/logo.png" alt="drawing"width="450"/>
+<img src="/view/logo.png" alt="drawing"width="500"/>
 </div>
 
 <div id='inicio'/> 
@@ -39,7 +39,7 @@ Sistema desenvolvido em Java utilizando os conceitos de Orientação a Objetos.
 
 ### ✏️ Diagrama de Classes ###
 <div align="center">
-<img src="/diagrama-de-classes.png" alt="drawing"width="700"/>
+<img src="/view/diagrama-de-classes.png" alt="drawing"width="700"/>
 </div>
 
 ### 📏 Organização do projeto ###
@@ -77,7 +77,7 @@ Para o input, manipulação e testes através de dados locais, utilizamos a clas
 
 ### 📽 Execução ###
 <div align="center">
-<img src="/executa-menu.gif" alt="drawing"width="700"/>
+<img src="/view/executa-menu.gif" alt="drawing"width="700"/>
 </div>
 
 <br>
