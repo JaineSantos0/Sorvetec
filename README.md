@@ -76,9 +76,9 @@ Para o input, manipulação e testes através de dados locais, utilizamos a clas
 ```
 
 ### 📽 Execução ###
-//video de execução
-<br>
-<br>
+<div align="center">
+<img src="/executa-menu.gif" alt="drawing"width="700"/>
+</div>
 
 <br>
 
